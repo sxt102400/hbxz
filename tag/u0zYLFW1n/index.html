@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Hello Gridea | 寒冰小站</title>
+<title>操作系统 | 寒冰小站</title>
 <meta name="description" content="寒冰的小站">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -22,7 +22,6 @@
 
   </head>
   <body>
-  
     <nav class="navbar border fixed split-nav">
   <div class="nav-brand">
     <h3><a href="https://sxt102400.github.io/hbxz/">寒冰小站</a></h3>
@@ -79,51 +78,52 @@
     <div id="top" class="row site">
       <div class="sm-12 md-8 col">
         <div class="paper">
-          <article class="article">
-            <h1>Hello Gridea</h1>
-            <p class="article-meta">
-              2018-12-12
-              
-                <a href="https://sxt102400.github.io/hbxz//tag/gridea" class="badge warning">
-                  Gridea
-                </a>
-              
-            </p>
-            
-              <img src="https://sxt102400.github.io/hbxz//post-images/hello-gridea.png" alt="Hello Gridea">
-            
-            <div class="post-content">
-              <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="http://hvenotes.fehey.com/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
-
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
+          <h2 class="current-tag">标签: 操作系统</h2>
           
-        </div>
-        
-      </div>
+  <article class="article">
+    <h2 class="article-title">
+      <a href="https://sxt102400.github.io/hbxz//post/12-ji-suan-ji-qi-dong-guo-cheng">1.2 计算机启动过程</a>
+    </h2>
+    <p class="article-meta">
+      2019-05-25
+      
+        <a href="https://sxt102400.github.io/hbxz//tag/u0zYLFW1n" class="badge warning">
+          操作系统
+        </a>
+      
+    </p>
+    <p class="text-lead">
+      <h2 id="计算机启动过程">计算机启动过程</h2>
+<h3 id="1-计算机启动过程">1 计算机启动过程</h3>
+<p><strong>1.1 加电自检</strong></p>
+<p>计算器通电后，首先加载执行BIOS代码，由BIOS对系统硬件执行自检查。</p>
+<blockquote>
+<p>通常完整的POST自检将包括对CPU，640K基本内存，1M以上的扩展内存，ROM，主板，CMOS存储器，串并口，显示卡，软硬盘子系统及键盘进行测试，一旦在自检中发现问题，系统将给出提示信息或鸣笛警告。</p>
+</blockquote>
+<p>BIOS检测硬件是否正常，然后开始初始化一些硬件设备。</p>
+<p><strong>1.2 加载引导扇区</strong></p>
+<p>（1）首先BIOS查找启动盘顺序。BIOS检查到硬件正常并与CMOS中的设置相符后，按照CMOS中对启动设备的设置顺序检测可用的启动设备。</p>
+<p>（2）BIOS将相应MBR扇区（也就是启动设备的第一个扇区，为硬盘的0面0磁道1扇区，扇区大小为512字节）读入内存地址为0000:7C00H处。</p>
+<p>（3）BIOS检查扇区格式，判断扇区是否以0xAA55结束，BIOS认为这个扇区是一个可用的引导扇区。否则去尝试其他的启动设备。如果没有启动设备满足要求则显示&quot;NO ROM BASIC&quot;然后死机。</p>
 
+    </p>
+    <div class="row">
+      <a href="https://sxt102400.github.io/hbxz//post/12-ji-suan-ji-qi-dong-guo-cheng" class="readmore-link">
+        <button>
+          Read More
+        </button>
+      </a>
+    </div>
+  </article>
+
+
+        </div>
+        <div class="row flex-edges">
+  
+  
+</div>
+
+      </div>
       <div class="sm-12 md-4 col sidebar">
   <div class="paper info-container">
     <img src="https://sxt102400.github.io/hbxz//images/avatar.png?v=1558793446060" class="no-responsive avatar">
@@ -176,7 +176,7 @@
     </div>
     <div class="row">
       
-        <a href="https://sxt102400.github.io/hbxz//tag/u0zYLFW1n" class="badge warning">
+        <a href="https://sxt102400.github.io/hbxz//tag/u0zYLFW1n" class="badge secondary">
           操作系统
         </a>
       
@@ -190,7 +190,6 @@
     Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
   </div>
 </div>
-
 
     </div>
 
