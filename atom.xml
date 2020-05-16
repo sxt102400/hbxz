@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://sxt102400.github.io</id>
+    <id>https://shawn1457.ink</id>
     <title>寒冰小站</title>
-    <updated>2020-05-16T05:47:22.264Z</updated>
+    <updated>2020-05-16T05:48:29.906Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://sxt102400.github.io"/>
-    <link rel="self" href="https://sxt102400.github.io/atom.xml"/>
+    <link rel="alternate" href="https://shawn1457.ink"/>
+    <link rel="self" href="https://shawn1457.ink/atom.xml"/>
     <subtitle>寒冰的小站</subtitle>
-    <logo>https://sxt102400.github.io/images/avatar.png</logo>
-    <icon>https://sxt102400.github.io/favicon.ico</icon>
+    <logo>https://shawn1457.ink/images/avatar.png</logo>
+    <icon>https://shawn1457.ink/favicon.ico</icon>
     <rights>All rights reserved 2020, 寒冰小站</rights>
     <entry>
         <title type="html"><![CDATA[Java面试准备第一天（Java基础）]]></title>
-        <id>https://sxt102400.github.io/post/java-mian-shi-zhun-bei-di-yi-tian-java-ji-chu/</id>
-        <link href="https://sxt102400.github.io/post/java-mian-shi-zhun-bei-di-yi-tian-java-ji-chu/">
+        <id>https://shawn1457.ink/post/java-mian-shi-zhun-bei-di-yi-tian-java-ji-chu/</id>
+        <link href="https://shawn1457.ink/post/java-mian-shi-zhun-bei-di-yi-tian-java-ji-chu/">
         </link>
         <updated>2020-05-16T02:24:27.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="jdk">JDK</h2>
@@ -193,8 +193,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[1.2 计算机启动过程]]></title>
-        <id>https://sxt102400.github.io/post/12-ji-suan-ji-qi-dong-guo-cheng/</id>
-        <link href="https://sxt102400.github.io/post/12-ji-suan-ji-qi-dong-guo-cheng/">
+        <id>https://shawn1457.ink/post/12-ji-suan-ji-qi-dong-guo-cheng/</id>
+        <link href="https://shawn1457.ink/post/12-ji-suan-ji-qi-dong-guo-cheng/">
         </link>
         <updated>2019-05-25T14:03:15.000Z</updated>
         <summary type="html"><![CDATA[<h2 id="计算机启动过程">计算机启动过程</h2>
@@ -237,8 +237,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://sxt102400.github.io/post/hello-gridea/</id>
-        <link href="https://sxt102400.github.io/post/hello-gridea/">
+        <id>https://shawn1457.ink/post/hello-gridea/</id>
+        <link href="https://shawn1457.ink/post/hello-gridea/">
         </link>
         <updated>2018-12-11T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
