@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://sxt102400.github.io/</id>
+    <id>https://sxt102400.github.io</id>
     <title>寒冰小站</title>
-    <updated>2020-05-16T05:46:05.328Z</updated>
+    <updated>2020-05-16T05:47:22.264Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://sxt102400.github.io/"/>
+    <link rel="alternate" href="https://sxt102400.github.io"/>
     <link rel="self" href="https://sxt102400.github.io/atom.xml"/>
     <subtitle>寒冰的小站</subtitle>
     <logo>https://sxt102400.github.io/images/avatar.png</logo>
