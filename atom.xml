@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://sxt102400.github.io/</id>
+    <title>寒冰小站</title>
+    <updated>2020-05-16T05:33:30.542Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://sxt102400.github.io/"/>
+    <link rel="self" href="https://sxt102400.github.io/atom.xml"/>
+    <subtitle>寒冰的小站</subtitle>
+    <logo>https://sxt102400.github.io/images/avatar.png</logo>
+    <icon>https://sxt102400.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 寒冰小站</rights>
+    <entry>
+        <title type="html"><![CDATA[Java面试准备第一天（Java基础）]]></title>
+        <id>https://sxt102400.github.io/post/java-mian-shi-zhun-bei-di-yi-tian-java-ji-chu/</id>
+        <link href="https://sxt102400.github.io/post/java-mian-shi-zhun-bei-di-yi-tian-java-ji-chu/">
+        </link>
+        <updated>2020-05-16T02:24:27.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="jdk">JDK</h2>
+<h3 id="jdk各个版本的新特性">JDK各个版本的新特性</h3>
+<p>** 1. JDK1.5新特性**</p>
+<ul>
+<li>枚举</li>
+<li>泛型</li>
+<li>自动装箱与拆箱</li>
+<li>静态导入</li>
+<li>可变参数</li>
+<li>内省</li>
+<li>For-Each循环</li>
+</ul>
+<p><strong>2. JDK1.6新特性</strong></p>
+<ul>
+<li>JAXB2实现xml和对象映射</li>
+<li>脚本语言的支持</li>
+<li>插入式注解</li>
+<li>Compiler API</li>
+</ul>
+<p>** JDK1.7有什么新特性**</p>
+<ul>
+<li>switch语句支持字符串变量</li>
+<li>catch代码块捕获多异常</li>
+<li>try-with-resources自动资源关闭</li>
+<li>支持二进制字面量，&quot;0b&quot;前缀，</li>
+<li>数字的&quot;_&quot;连数符，支持数字字面量可读性</li>
+<li>NIO2.0的Path</li>
+</ul>
+<p><strong>4.JDK8有什么新特性</strong></p>
+<ul>
+<li>函数式接口</li>
+<li>Lamb表达式</li>
+<li>Stream流</li>
+<li>新的Date,Time API</li>
+<li>Nashorn javascript脚本引擎</li>
+<li>重复注解，现在你可以将相同的注解在同一类型上使用多次。</li>
+</ul>
+<h3 id="jdk-中常用的包有哪些">JDK 中常用的包有哪些？</h3>
+<p>答：lang，util，io，net，sql。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="jdk">JDK</h2>
+<h3 id="jdk各个版本的新特性">JDK各个版本的新特性</h3>
+<p>** 1. JDK1.5新特性**</p>
+<ul>
+<li>枚举</li>
+<li>泛型</li>
+<li>自动装箱与拆箱</li>
+<li>静态导入</li>
+<li>可变参数</li>
+<li>内省</li>
+<li>For-Each循环</li>
+</ul>
+<p><strong>2. JDK1.6新特性</strong></p>
+<ul>
+<li>JAXB2实现xml和对象映射</li>
+<li>脚本语言的支持</li>
+<li>插入式注解</li>
+<li>Compiler API</li>
+</ul>
+<p>** JDK1.7有什么新特性**</p>
+<ul>
+<li>switch语句支持字符串变量</li>
+<li>catch代码块捕获多异常</li>
+<li>try-with-resources自动资源关闭</li>
+<li>支持二进制字面量，&quot;0b&quot;前缀，</li>
+<li>数字的&quot;_&quot;连数符，支持数字字面量可读性</li>
+<li>NIO2.0的Path</li>
+</ul>
+<p><strong>4.JDK8有什么新特性</strong></p>
+<ul>
+<li>函数式接口</li>
+<li>Lamb表达式</li>
+<li>Stream流</li>
+<li>新的Date,Time API</li>
+<li>Nashorn javascript脚本引擎</li>
+<li>重复注解，现在你可以将相同的注解在同一类型上使用多次。</li>
+</ul>
+<h3 id="jdk-中常用的包有哪些">JDK 中常用的包有哪些？</h3>
+<p>答：lang，util，io，net，sql。</p>
+<!-- more --> 
+<h2 id="数据类型">数据类型</h2>
+<h3 id="string-和-stringbuilderstringbuffer是线程安全r-的区别">String 和 StringBuilder，StringBuffer是线程安全r 的区别</h3>
+<p>String类型：</p>
+<ul>
+<li>对象不可变，存储在常量池里面。每一次执行“+”都会新生成一个新对象，所以频繁改变字符串的情况中不用String，以节省内存。</li>
+<li>线程安全，不可变自然线程安全</li>
+</ul>
+<p>StringBuilder ：</p>
+<ul>
+<li>对象可变，存储于堆中</li>
+<li>非线程安全：StringBuilder 非线程安全，StringBuffer是线程安全。</li>
+</ul>
+<p>StringBuffer：</p>
+<ul>
+<li>线程安全：StringBuilder 非线程安全，StringBuffer是线程安全。</li>
+<li>不涉及线程操作下，StringBuilder 性能好于StringBuffer。</li>
+<li></li>
+</ul>
+<p>问题：</p>
+<p><strong>1. 64 位 JVM 中，int 的长度是多数？</strong></p>
+<p>Java 中，int 类型变量的长度是32 位，占４个字节．与平台无关．</p>
+<p>**2. Java 中应该使用什么数据类型来代表价格 **</p>
+<p>价格必须使用精确运算，BigDecimal类型</p>
+<h2 id="类">类</h2>
+<h3 id="面向对象的特性有哪些">面向对象的特性有哪些</h3>
+<p>封装、继承和多态。</p>
+<h3 id="java中多态的实现原理">Java中多态的实现原理</h3>
+<p>所谓多态：指的就是父类引用指向子类对象，调用方法时会调用子类的实现而不是父类的实现。多态的实现的关键在于“动态绑定”。</p>
+<p>动态绑定：动态绑定一般发生在继承、方法重载时。当子类和父类（接口和实现类）存在同一个方法时，子类重写父类（接口）方法时，程序在运行时调用的方法时，动态得判断是调用父类（接口）的方法还是调用子类的方法，称为动态绑定。</p>
+<h3 id="java-中重写和重载">Java 中重写和重载</h3>
+<p>重载和重写都允许你用相同的名称来实现不同的功能，但是重载是发生在编译期，而重写是发生在运行时。你可以在同一个类中重载方法，但是只能在子类中重写方法。</p>
+<ol>
+<li>重写：子类重写父类方法。</li>
+</ol>
+<blockquote>
+<ol>
+<li>
+<p>重写的方法和被重写的方法必须具有相同方法名称、参数列表和返回类型</p>
+</li>
+<li>
+<p>子类权限不能比被父类得访问权限更严格。只能比父类抛出更少的异常.</p>
+</li>
+</ol>
+</blockquote>
+<ol start="2">
+<li>重载：同一个类多个方法之间重载。重载的方法，方法名称相同，参数列表不同， 返回值可以相同也可以不同</li>
+</ol>
+<p>1）重载：在一个类的多个方法进行重载</p>
+<blockquote>
+<ol>
+<li>
+<p>只需要方法名要一样，但是参数类型和个数不一样，返回值类型可以相同也可以不相同。</p>
+</li>
+<li>
+<p>重载只和参数有关，和返回值类型无关。</p>
+</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>构成重载的参数条件：</p>
+<p>1）参数类型不同。<br>
+2）参数个数不同。<br>
+3）参数顺序不同。</p>
+</blockquote>
+<p><strong>1.  抽象类和接口的区别有哪些？</strong></p>
+<p>接口用于声明，抽象类用于默认实现。</p>
+<p>抽象类是指不允许被实例化的类；一个类只能使用一次继承关系。但是，一个类却可以实现多个interface。</p>
+<p>接口：</p>
+<ul>
+<li>只有常量，没有变量，常量必须是 static final 类型的，必须被初始化</li>
+<li>方法必须是抽象方法</li>
+<li>接口支持多实现</li>
+</ul>
+<p>抽象类：</p>
+<ul>
+<li>可以有普通的成员变量</li>
+<li>可以有普通方法，方法不一定是抽象方法</li>
+<li>类只能单继承</li>
+</ul>
+<p><strong>2. 函数的返回值不同可以构成重载吗？</strong></p>
+<p>重载与返回值无关。函数的返回值同不同没有影响。只是函数的返回值不同，是无法构成重载的。</p>
+<h3 id="java-中的值传递和引用传递">Java 中的值传递和引用传递</h3>
+<p>引用传递是传递对象的指针，传递对象的引用。指对象被引用传递，意味着传递的并不是实际的对象，而是对象的引用。操作引用会修改原对象。</p>
+<p>值传递是指传递对象的值，意味着传递了对象的一个副本，即使副本被改变，也不会影响源对象。</p>
+<h2 id="java中publicprivateprotected以及默认关键字的访问范围">java中public，private，protected以及默认关键字的访问范围</h2>
+<p><strong>object中定义了哪些方法？</strong></p>
+<ul>
+<li>equals(),</li>
+<li>hashCode(), clone()</li>
+<li>notify(), notifyAll(),wait(),</li>
+<li>finalize(), getClass()</li>
+<li>toString()，</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[1.2 计算机启动过程]]></title>
+        <id>https://sxt102400.github.io/post/12-ji-suan-ji-qi-dong-guo-cheng/</id>
+        <link href="https://sxt102400.github.io/post/12-ji-suan-ji-qi-dong-guo-cheng/">
+        </link>
+        <updated>2019-05-25T14:03:15.000Z</updated>
+        <summary type="html"><![CDATA[<h2 id="计算机启动过程">计算机启动过程</h2>
+<h3 id="1-计算机启动过程">1 计算机启动过程</h3>
+<p><strong>1.1 加电自检</strong></p>
+<p>计算器通电后，首先加载执行BIOS代码，由BIOS对系统硬件执行自检查。</p>
+<blockquote>
+<p>通常完整的POST自检将包括对CPU，640K基本内存，1M以上的扩展内存，ROM，主板，CMOS存储器，串并口，显示卡，软硬盘子系统及键盘进行测试，一旦在自检中发现问题，系统将给出提示信息或鸣笛警告。</p>
+</blockquote>
+<p>BIOS检测硬件是否正常，然后开始初始化一些硬件设备。</p>
+<p><strong>1.2 加载引导扇区</strong></p>
+<p>（1）首先BIOS查找启动盘顺序。BIOS检查到硬件正常并与CMOS中的设置相符后，按照CMOS中对启动设备的设置顺序检测可用的启动设备。</p>
+<p>（2）BIOS将相应MBR扇区（也就是启动设备的第一个扇区，为硬盘的0面0磁道1扇区，扇区大小为512字节）读入内存地址为0000:7C00H处。</p>
+<p>（3）BIOS检查扇区格式，判断扇区是否以0xAA55结束，BIOS认为这个扇区是一个可用的引导扇区。否则去尝试其他的启动设备。如果没有启动设备满足要求则显示&quot;NO ROM BASIC&quot;然后死机。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h2 id="计算机启动过程">计算机启动过程</h2>
+<h3 id="1-计算机启动过程">1 计算机启动过程</h3>
+<p><strong>1.1 加电自检</strong></p>
+<p>计算器通电后，首先加载执行BIOS代码，由BIOS对系统硬件执行自检查。</p>
+<blockquote>
+<p>通常完整的POST自检将包括对CPU，640K基本内存，1M以上的扩展内存，ROM，主板，CMOS存储器，串并口，显示卡，软硬盘子系统及键盘进行测试，一旦在自检中发现问题，系统将给出提示信息或鸣笛警告。</p>
+</blockquote>
+<p>BIOS检测硬件是否正常，然后开始初始化一些硬件设备。</p>
+<p><strong>1.2 加载引导扇区</strong></p>
+<p>（1）首先BIOS查找启动盘顺序。BIOS检查到硬件正常并与CMOS中的设置相符后，按照CMOS中对启动设备的设置顺序检测可用的启动设备。</p>
+<p>（2）BIOS将相应MBR扇区（也就是启动设备的第一个扇区，为硬盘的0面0磁道1扇区，扇区大小为512字节）读入内存地址为0000:7C00H处。</p>
+<p>（3）BIOS检查扇区格式，判断扇区是否以0xAA55结束，BIOS认为这个扇区是一个可用的引导扇区。否则去尝试其他的启动设备。如果没有启动设备满足要求则显示&quot;NO ROM BASIC&quot;然后死机。</p>
+<!-- more -->
+<p><strong>1.3 执行指令</strong></p>
+<p>加载完成后，BIOS将控制权交给CPU，CPU开始执行0x0000:7c00处，也就是被加载了引导扇区的地方的代码。</p>
+<p>cpu加载内核文件，启动相关操作系统。</p>
+<h3 id="2-bios">2 BIOS</h3>
+<p><strong>2.1 BIOS的作用</strong></p>
+<p>BIOS的英文全称为<code>Basic Input Output System</code>，是位于计算机主板上只读ROM芯片上的程序。</p>
+<p>BIOS映射的地址为ROM的0xF0000~0xFFFFF位置。</p>
+<p>其中<code>0x00000~0x9FFFF</code>位置是属于内存条的地址，<code>0xF0000~0xFFFF</code>是属于BIOS的ROM地址。</p>
+<!-- more -->
+<!-- more -->
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://sxt102400.github.io/post/hello-gridea/</id>
+        <link href="https://sxt102400.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="http://hvenotes.fehey.com/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
