@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Java面试准备第一天 | 寒冰小站</title>
+<meta name="description" content="寒冰的小站">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="shortcut icon" href="https://sxt102400.github.io/hbxz//favicon.ico?v=1589596038245">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="stylesheet" href="https://sxt102400.github.io/hbxz//styles/main.css">
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+  </head>
+  <body>
+  
+    <nav class="navbar border fixed split-nav">
+  <div class="nav-brand">
+    <h3><a href="https://sxt102400.github.io/hbxz/">寒冰小站</a></h3>
+  </div>
+  <div class="collapsible">
+    <input id="collapsible1" type="checkbox" name="collapsible1">
+    <button>
+      <label for="collapsible1">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </label>
+    </button>
+    <div class="collapsible-body">
+      <ul class="inline">
+        
+          <li>
+            
+              <a href="/hbxz" class="menu">
+                首页
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/hbxz/archives" class="menu">
+                归档
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/hbxz/tags" class="menu">
+                标签
+              </a>
+            
+          </li>
+        
+          <li>
+            
+              <a href="/hbxz/post/about" class="menu">
+                关于
+              </a>
+            
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div id="top" class="row site">
+      <div class="sm-12 md-8 col">
+        <div class="paper">
+          <article class="article">
+            <h1>Java面试准备第一天</h1>
+            <p class="article-meta">
+              2020-05-16
+              
+            </p>
+            
+            <div class="post-content">
+              <h2 id="jdk">JDK</h2>
+<h3 id="1-jdk15新特性">1. JDK1.5新特性</h3>
+<ul>
+<li>枚举</li>
+<li>泛型</li>
+<li>自动装箱与拆箱</li>
+<li>静态导入</li>
+<li>可变参数</li>
+<li>内省</li>
+<li>For-Each循环</li>
+</ul>
+<h3 id="2-jdk16新特性">2. JDK1.6新特性</h3>
+<ul>
+<li>JAXB2实现xml和对象映射</li>
+<li>脚本语言的支持</li>
+<li>插入式注解</li>
+<li>Compiler API</li>
+</ul>
+<h3 id="3-jdk7有什么新特性">3. JDK7有什么新特性</h3>
+<ul>
+<li>switch语句支持字符串变量</li>
+<li>catch代码块捕获多异常</li>
+<li>try-with-resources自动资源关闭</li>
+<li>支持二进制字面量，&quot;0b&quot;前缀，</li>
+<li>数字的&quot;_&quot;连数符，支持数字字面量可读性</li>
+<li>NIO2.0的Path</li>
+</ul>
+<h3 id="4jdk8有什么新特性">4.JDK8有什么新特性</h3>
+<ul>
+<li>函数式接口</li>
+<li>Lamb表达式</li>
+<li>Stream流</li>
+<li>新的Date,Time API</li>
+<li>Nashorn javascript脚本引擎</li>
+<li>重复注解，现在你可以将相同的注解在同一类型上使用多次。</li>
+</ul>
+<!-- more --> 
+<h2 id="数据类型">数据类型</h2>
+<h3 id="64-位-jvm-中int-的长度是多数">64 位 JVM 中，int 的长度是多数？</h3>
+<p>Java 中，int 类型变量的长度是32 位，占４个字节．与平台无关．</p>
+<h3 id="java-中应该使用什么数据类型来代表价格">Java 中应该使用什么数据类型来代表价格</h3>
+<p>价格必须使用精确运算，BigDecimal类型</p>
+<h3 id="string-和-stringbuilder-的区别">String 和 StringBuilder 的区别</h3>
+<p>String类型：</p>
+<ul>
+<li>对象不可变，存储在常量池里面。每一次执行“+”都会新生成一个新对象，所以频繁改变字符串的情况中不用String，以节省内存。</li>
+<li>线程安全，不可变自然线程安全</li>
+</ul>
+<p>StringBuilder ：</p>
+<ul>
+<li>对象可变，存储于堆中</li>
+<li>非线程安全：StringBuilder 非线程安全，StringBuffer是线程安全。</li>
+</ul>
+<h2 id="类">类</h2>
+<h3 id="面向对象的特性有哪些">面向对象的特性有哪些</h3>
+<p>封装、继承和多态。</p>
+<h3 id="java中多态的实现原理">Java中多态的实现原理</h3>
+<p>所谓多态：指的就是父类引用指向子类对象，调用方法时会调用子类的实现而不是父类的实现。多态的实现的关键在于“动态绑定”。</p>
+<p>动态绑定：</p>
+<h3 id="java-中重写和重载是什么意思">Java 中重写和重载是什么意思？</h3>
+<p>重写：子类重写父类方法。只能比父类抛出更少的异常，访问权限不能比父类的小。</p>
+<p>重载：同一个类多个方法重载。重载的方法，方法名称相同，参数列表不同， 返回值可以相同也可以不同</p>
+<p>那么构成重载的参数条件有哪些？</p>
+<p>1）参数类型不同
+2）参数个数不同
+3）参数顺序不同。</p>
+<p><strong>10.描述 Java 中的重载和重写？</strong></p>
+<p>重载和重写都允许你用相同的名称来实现不同的功能，但是重载是编译时活动，而重写是运行时活动。你可以在同一个类中重载方法，但是只能在子类中重写方法。重写必须要有继承</p>
+<p>**1）重写：**在子类中重写父类方法。</p>
+<blockquote>
+<ol>
+<li>
+<p>重写的方法和被重写的方法必须具有相同方法名称、参数列表和返回类型</p>
+</li>
+<li>
+<p>重写方法不能使用比被重写的方法更严格的访问权限。</p>
+</li>
+</ol>
+</blockquote>
+<p>2）重载：在一个类的多个方法进行重载</p>
+<blockquote>
+<ol>
+<li>只需要方法名要一样，但是参数类型和个数不一样，返回值类型可以相同也可以不相同。</li>
+<li>无法以返回型别作为重载函数的区分标准。</li>
+</ol>
+</blockquote>
+<h3 id="函数的返回值不同可以构成重载吗为什么">函数的返回值不同可以构成重载吗？为什么？</h3>
+<p>重载与返回值无关。函数的返回值同不同没有影响。</p>
+<p>只是函数的返回值不同，是无法构成重载的。</p>
+<h3 id="抽象类和接口的区别有哪些">抽象类和接口的区别有哪些？</h3>
+<p>接口用于声明，抽象类用于默认实现。</p>
+<p>接口：</p>
+<ul>
+<li>只有常量，没有变量，常量必须是 static final 类型的，必须被初始化</li>
+<li>方法必须是抽象方法</li>
+<li>接口支持多实现</li>
+</ul>
+<p>抽象类：</p>
+<ul>
+<li>可以有普通的成员变量</li>
+<li>可以有普通方法，方法不一定是抽象方法</li>
+<li>类只能单继承</li>
+</ul>
+<h3 id="java-中的值传递和引用传递">Java 中的值传递和引用传递</h3>
+<p>引用传递是传递对象的指针，传递对象的引用。指对象被引用传递，意味着传递的并不是实际的对象，而是对象的引用。操作引用会修改原对象。</p>
+<p>值传递是指传递对象的值，意味着传递了对象的一个副本，即使副本被改变，也不会影响源对象。</p>
+<p><strong>java中public，private，protected以及默认关键字的访问范围：</strong></p>
+<p>Protected可在包内及包外子类访问，default只能同一包内访问，private只能同一类</p>
+<h3 id="抽象类和接口有什么区别你为什么要使用过抽象类">抽象类和接口有什么区别？你为什么要使用过抽象类？</h3>
+<p>抽象类是指不允许被实例化的类；一个类只能使用一次继承关系。但是，一个类却可以实现多个interface。</p>
+<p>abstract class和interface所反映出的设计理念不同。其实abstract class表示的是&quot;is-a&quot;关系，interface表示的是&quot;like-a&quot;关系</p>
+<p>实现抽象类和接口的类必须实现其中的所有方法。抽象类中可以有非抽象方法。接口中则不能有实现方法。但在Java8中允许接口中有静态默认的方法。</p>
+<pre><code>接口中定义的变量默认是public static final 型，且必须给其初值，所以实现类中不能重新定义，也不能改变其值。抽象类中的变量默认是 friendly 型，其值可以在子类中重新定义，也可以重新赋值。
+子类中实现父类中的抽象方法时，可见性可以大于等于父类中的；而接口实现类中的接口 方法的可见性只能与接口中相同（public）。
+</code></pre>
+<p>用抽象类是为了重用。减少编码量，降低耦合性。</p>
+<h2 id="类-2">类</h2>
+<h3 id="jdk-中常用的包有哪些">JDK 中常用的包有哪些？</h3>
+<p>答：lang，util，io，net，sql。</p>
+<p><strong>object中定义了哪些方法？</strong></p>
+<ul>
+<li>
+<p>equals(),</p>
+</li>
+<li>
+<p>hashCode(), clone()</p>
+</li>
+<li>
+<p>notify(), notifyAll(),wait(),</p>
+</li>
+<li>
+<p>finalize(), getClass()</p>
+</li>
+<li>
+<p>toString()，</p>
+</li>
+</ul>
+
+            </div>
+          </article>
+        </div>
+        <div class="paper" data-aos="fade-in">
+          
+            <div class="next-post">
+              <div class="next">
+                下一篇
+              </div>
+              <a href="https://sxt102400.github.io/hbxz//post/12-ji-suan-ji-qi-dong-guo-cheng">
+                <h3 class="post-title">
+                  1.2 计算机启动过程
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+        
+      </div>
+
+      <div class="sm-12 md-4 col sidebar">
+  <div class="paper info-container">
+    <img src="https://sxt102400.github.io/hbxz//images/avatar.png?v=1589596038245" class="no-responsive avatar">
+    <div class="text-muted">寒冰的小站</div>
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      最新文章
+    </div>
+    <div class="row">
+      <ul>
+        
+          
+            <li>
+              <a href="https://sxt102400.github.io/hbxz//post/java-mian-shi-zhun-bei-di-yi-tian">Java面试准备第一天</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://sxt102400.github.io/hbxz//post/12-ji-suan-ji-qi-dong-guo-cheng">1.2 计算机启动过程</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://sxt102400.github.io/hbxz//post/about">关于</a>
+            </li>
+          
+        
+          
+            <li>
+              <a href="https://sxt102400.github.io/hbxz//post/hello-gridea">Hello Gridea</a>
+            </li>
+          
+        
+      </ul>
+    </div>
+  </div>
+  <div class="paper">
+    <div class="sidebar-title">
+      标签列表
+    </div>
+    <div class="row">
+      
+        <a href="https://sxt102400.github.io/hbxz//tag/u0zYLFW1n" class="badge success">
+          操作系统
+        </a>
+      
+        <a href="https://sxt102400.github.io/hbxz//tag/gridea" class="badge success">
+          Gridea
+        </a>
+      
+    </div>
+  </div>
+  <div class="paper">
+    Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  </div>
+</div>
+
+
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+</script>
+
+
+
+
+  </body>
+</html>
